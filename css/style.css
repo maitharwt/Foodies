@@ -1,0 +1,342 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(250, 250, 250);
+    font-family: 'Lato', sans-serif;
+}
+header{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../data/images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+}*/
+
+.logo{
+    float: left;
+    height: 100px;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.main-nav a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.main-nav a:hover{
+    color: orange;
+    text-decoration: underline ;
+}
+.hero-box{
+    position: absolute;
+    top: 40%;
+}
+h1{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: bold;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+.btn ,.signUp {
+    border: solid orange 2px;
+    border-radius: 20px;
+    color: orange;
+    margin-left: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.btn:hover , .signUp:hover {
+background-color: orange;
+color: white;
+}
+section{
+    padding: 40px 0px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: bold;
+    line-height: 150%;
+}
+/*hr{
+    width: 150px;
+    border: solid 2px orange;
+    border-radius: 4px;
+    margin: 10px auto;
+}*/
+h2::after{
+    content: "";
+    background-color: orange;
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 5px;
+}
+.description{
+    width: 60%;
+    margin: 10px auto;
+}
+.box {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.box i{
+    color: orange;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.box h3{
+margin-bottom: 30px;
+}
+.box p{
+    line-height: 150%;
+}
+.meal{
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+.meal img{
+    width: 100%;
+    opacity: 0.6;
+    transition: 1s;
+    transform: scale(1.1);
+}
+.meal img:hover{
+opacity: 1;
+transform: scale(1);
+}
+.works{
+    background-color: rgb(204, 204, 204);
+}
+.iphone{
+    width: 40%;
+}
+.left{
+    text-align: right;
+    padding-right: 7%;
+}
+.right{
+    text-align: center;
+    padding-left: 0%;
+    padding-top: 50px;
+}
+.step{
+    margin-bottom: 30px;
+}
+.step span{
+    margin-right: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 2px orange;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+}
+.brands{
+    margin-top: 50px;
+}
+.brands a{
+    margin-left: 15px;
+}
+.brands img{
+    height: 50px;
+}
+.city img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.city h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.city-info{
+    display: flex;
+    margin-bottom: 10px;
+}
+.city-info i{
+    color: orange;
+    margin-right: 10px;
+}
+#testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../data/images/back-customers.jpg);
+    background-position: center;
+    background-size: cover; 
+    color: white;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+}
+#testimonials i {
+    color: white;
+    font-size: 50px;
+    transform: rotate(180deg);
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+#testimonials p{
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+#testimonials img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.eating-healthy{
+    background-color: rgb(236, 235, 235);
+}
+.plan{
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.plan-1{
+    background-color: rgb(248, 248, 248);
+    border: solid 2px rgb(248, 248, 248);
+    border-radius: 10px;
+    margin: -2px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.plan-1 h3{
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgb(65, 65, 65);
+}
+.plan-1 h5{
+    color: orange;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.plan-1 span{
+    font-size: 50px;
+    margin-right: 5px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.plan-1 h6{
+    padding-bottom: 20px;
+font-weight: lighter;
+font-size: 15px;
+color: rgb(85, 85, 85);
+}
+.plan-2{
+    background-color: white;
+    border-top: solid 1px rgb(211, 210, 210);
+    border-bottom: solid 1px rgb(211, 210, 210);
+    margin-bottom: 20px;
+    line-height: 220%;
+    padding: 20px;
+    color: rgb(95, 92, 92);
+
+}
+.plan-2 ul{
+list-style: none;
+}
+.plan-2 li{
+    font-size: 18px;
+}
+.plan-2 i{
+    color: orange;
+    padding-right: 20px;
+    font-size: 10px;
+}
+.signUp{
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+
+.contact-form label{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+input[type= text], input[type= email], select , textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid #ccc 2px;
+    border-radius: 5px;
+}
+.drop{
+    margin-top: 10px;
+}
+.contact-form button{
+border: solid orange 2px;
+border-radius: 20px;
+color: white;
+background-color: orange;
+margin-left: 40%;
+padding: 10px 20px;
+width: 150px;
+}
+button:hover{
+    border: solid orange 2px;
+border-radius: 20px;
+color: orange;
+background-color: white;
+}
+footer{
+    background-color: #333;
+    padding: 30px 0px;
+}
+footer p{
+margin-top: 20px;
+color: #888;
+text-align: center;
+}
+.footer-nav{
+    float: left;
+    list-style: none;
+}
+.social-nav{
+    float: right;
+    list-style: none;
+}
+.footer-nav li, .social-nav li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #888;
+}
+.footer-nav a, .social-nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.footer-nav a:hover , .social-nav a:hover{
+    color: orange;
+    text-decoration: underline ;
+}
